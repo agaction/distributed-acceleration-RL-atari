@@ -6,6 +6,6 @@ pip3 install psutil pytz tqdm atari_py gym
 mkdir ~/CULE_INSTALL
 git clone --recursive https://github.com/NVlabs/cule
 cd cule
-python3 setup.py install --prefix ~/CULE_INSTALL
+python3 setup.py install --fastbuild --prefix ~/CULE_INSTALL
 export PYTHONPATH=$PYTHONPATH:~/CULE_INSTALL/lib/python3.9/site-packages/torchcule-0.1.0-py3.9-linux-x86_64.egg/
 ```
