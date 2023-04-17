@@ -1,6 +1,6 @@
 ```
 module load cuda/10.0 gcc/7.4.0 anaconda3/2019.07
-pip install cython psutil pytz tqdm atari_py opencv-python torch==1.2.0 gym==0.14.0
+pip install --user cython psutil pytz tqdm atari_py opencv-python torch==1.2.0 gym==0.14.0
 mkdir ~/CULE_INSTALL
 git clone --recursive https://github.com/NVlabs/cule
 cd cule
