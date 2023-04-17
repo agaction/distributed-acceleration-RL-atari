@@ -1,18 +1,20 @@
-Make sure to set up the pythonpath every time you start a new bash environment or you won't be able to import CULE. (Might want to just add it to bashrc)
-
 ```
-module load pytorch cuda/10.0 gcc/7.4.0
-pip3 install psutil pytz tqdm atari_py gym
+module load cuda/10.0 gcc/7.4.0 anaconda3/2019.07
+pip install cython psutil pytz tqdm atari_py gym opencv-python torch==1.2.0
 mkdir ~/CULE_INSTALL
 git clone --recursive https://github.com/NVlabs/cule
 cd cule
-python3 setup.py install --fastbuild --prefix ~/CULE_INSTALL
-export PYTHONPATH=$PYTHONPATH:~/CULE_INSTALL/lib/python3.9/site-packages/torchcule-0.1.0-py3.9-linux-x86_64.egg/
 ```
 
-Then you need to get import Atari ROM files
+Open the setup.py file in the cule repo and change line 12 to be just `gpus =  ['70']`
+
+```
+pip install -v -e . --user --install-option='--fastbuild'
+```
+
+Then you need to import Atari ROM files (I think we might need to go find a different set of roms, the ones I added aren't the best option)
 ```
 git clone https://github.com/agaction/cse6230-spring23-final-proj-ddppo.git
 cd ~/cse6230-spring23-final-proj-ddppo/roms
-python3 -m atari_py.import_roms .
+python -m atari_py.import_roms .
 ```
