@@ -11,8 +11,6 @@ Final project for cse6230 HPPC, focusing on decentralized distributed PPO: https
 ## Install CULE
 `cd cse6230-spring23-final-proj-ddppo`
 
-`chmod +x install_cule.sh`
-
 `./install_cule.sh`
 
 ## To run PPO
