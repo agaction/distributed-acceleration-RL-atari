@@ -14,7 +14,7 @@ Final project for cse6230 HPPC, focusing on decentralized distributed PPO: https
 `./install_cule.sh`
 
 ## To run PPO
-`python src/ppo_main.py -c configs/benchmark.config`
+`python src/ppo_main.py -c configs/cpu_benchmark.config`
 
 You can also vary the different parameters by modifying the benchmark.config or using the arguments:
 ```
