@@ -2,6 +2,7 @@
 Final project for cse6230 HPPC, focusing on decentralized distributed PPO
 
 `qsub -l walltime=02:00:00 -l nodes=1:ppn=4:gpus=1:teslav100 -l pmem=8gb -q coc-ice-gpu -I`
+
 `git clone https://github.com/agaction/cse6230-spring23-final-proj-ddppo.git`
 
 ## Prepare the environment
@@ -9,7 +10,9 @@ Final project for cse6230 HPPC, focusing on decentralized distributed PPO
 
 ## Install CULE
 `cd cse6230-spring23-final-proj-ddppo`
+
 `chmod +x install_cule.sh`
+
 `./install_cule.sh`
 
 ## To run PPO
