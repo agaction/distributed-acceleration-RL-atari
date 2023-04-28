@@ -23,6 +23,8 @@ You can also vary the different parameters by modifying the benchmark.config or 
 --num-steps
 ```
 
+There are 3 preconfigured options, cpu_benchmark.config will run a training session using only cpu, gpu_single.config will run on a single gpu and gpu_parallel.config attemps to run using all the available gpus but fails due to an issue with running distributed code on old versions of pytorch when the gpus are in exclusive process mode.
+
 
 
 ## To visualize a trained model playing pong
